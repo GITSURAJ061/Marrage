@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: Gilroy;
+}
+/* index.css */
+
+/* CSS for animated gradient background */
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .animate-gradient-bg {
+    background-size: 200% 200%;
+    animation: gradient-animation 10s ease infinite;
+  }
+  
